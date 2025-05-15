@@ -1,0 +1,21 @@
+/* Style for even-numbered rows */
+table tr:nth-child(even) {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff; /* White */
+}
+
+table {
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}

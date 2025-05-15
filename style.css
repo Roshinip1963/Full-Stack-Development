@@ -1,0 +1,9 @@
+/* styles.css */
+h1 {
+  text-align: center;
+}
+
+p {
+  color: #333333;  /* dark gray */
+  font-size: 20px;
+}
