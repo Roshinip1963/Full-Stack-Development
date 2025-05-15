@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f2f5;
+    }
+
+    article, aside {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    aside p {
+      margin-top: 10px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <h2>Feedback Form</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="6" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </article>
+
+  <aside>
+    <h2>What are localStorage and sessionStorage?</h2>
+    <p>
+      <strong>localStorage</strong> and <strong>sessionStorage</strong> are part of the Web Storage API in modern web browsers. They allow websites to store data directly in the user's browser.
+    </p>
+    <p>
+      <strong>localStorage</strong> allows data to be stored in the browser with no expiration time.<br> Keeps data with no expiration—so it remains even after the browser is closed and reopened.<br>This means the data persists even after the browser is closed and reopened.
+    </p>
+    <p>
+      <strong>sessionStorage</strong> stores data only for the duration of the page session. The data is deleted once the browser tab is closed meaning it's cleared when the tab or browser is closed..
+    </p>
+    <p>
+      These are commonly used to remember user preferences, temporary form data, or keep track of user sessions on the client-side without using cookies.
+    </p>
+  </aside>
+
+</body>
+</html>
