@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse a String</title>
+</head>
+<body>
+    <script>
+        // Ask the user to enter a string
+        let inputString = prompt("Enter a string:");
+
+        // Check if input is not null or empty
+        if (inputString) {
+            // Reverse the string
+            let reversedString = inputString.split("").reverse().join("");
+
+            // Show the reversed string
+            alert("Reversed string: " + reversedString);
+        } else {
+            alert("No input provided.");
+        }
+    </script>
+</body>
+</html>
