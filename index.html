@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bus Reservation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bus Reservation System</h1>
+  <form id="reservationForm">
+    <label>Ticket ID: <input type="text" id="ticketId" required></label><br>
+    <label>Passenger Name: <input type="text" id="passengerName" required></label><br>
+    <label>Bus No: <input type="text" id="busNo" required></label><br>
+    <label>Date: <input type="date" id="date" required></label><br>
+    <label>Seat No: <input type="number" id="seatNo" min="1" max="50" required></label><br>
+    <label>Fare: <input type="number" id="fare" required></label><br>
+    <button type="submit">Book Seat</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
